@@ -1,0 +1,19 @@
+{
+  "title": "文章标题",
+  "date": "YYYY-MM-DD",
+  "author": "作者/账号",
+  "column": "内容系列名称",
+  "article_type": "访谈 | 深度 | 短评 | 观察 | 盘点 | 观点",
+  "topic_tags": ["标签1", "标签2"],
+  "hook_type": "问题式 | 场景式 | 数据式 | 观点式 | 悬念式",
+  "structure_pattern": "总分总 | 时间线 | 对比 | Q&A | 清单",
+  "source_types": ["一手素材", "公开资料", "案例对比"],
+  "word_count": 0,
+  "notable": "特殊之处（可留空）",
+
+  "archetype_id": "所属结构原型ID，如 A（Step 4 归纳后回填）",
+  "opening_snippet": "开头前两句原文照抄（样本层）",
+  "closing_snippet": "结尾后两句原文照抄（样本层）",
+  "form_tags": ["可迁移的形式特征，如 反转式结构、整句加粗"],
+  "content_tags": ["绑定话题的内容，如 拆解了某公司、引用了某榜单——进内容禁区"]
+}
