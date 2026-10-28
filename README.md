@@ -75,3 +75,13 @@ style-clone/
 MIT。方法整合自两个 MIT 开源项目，详见 `NOTICE.md`：
 - [ghost-writer](https://github.com/OneSpiral/ghost-writer) — 24 维法医式风格分析
 - [ahao-writing-dna-distiller](https://github.com/ahao31196/ahao-writing-dna-distiller) — 六层蒸馏 + AI 味防火墙 + 量化基线脚本
+
+
+## WorkBuddy 通用版
+
+保留原版入口，另提供可独立安装的通用版：
+
+- [通用版说明与源码](style-clone-general/README.md)
+- [下载 WorkBuddy 发布包](dist/style-clone-general.zip?raw=true)
+
+通用版包含开放平台发布元数据、匿名风格档案模板、离线预处理与描述统计脚本；不包含用户原稿或私人档案。

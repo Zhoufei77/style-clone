@@ -1,0 +1,68 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Anonymous style sample record",
+  "description": "Optional runtime record kept in the user's workspace. No real identity is required. A source reference does not grant permission to store, quote, or redistribute the source.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["sample_id", "source_ref", "permissions", "analysis_status"],
+  "properties": {
+    "sample_id": {"type": "string", "pattern": "^sample-[A-Za-z0-9_-]+$"},
+    "source_ref": {"type": "string", "description": "Workspace-relative location or an anonymous source index key; avoid personal paths and unnecessary identities."},
+    "source_group": {"type": "string", "description": "Optional anonymous group identifier."},
+    "date_range": {"type": ["string", "null"], "description": "Only if needed and known; do not infer a precise date."},
+    "format": {"type": "string", "description": "Observed form, not a required genre taxonomy."},
+    "length": {
+      "type": ["object", "null"],
+      "additionalProperties": false,
+      "required": ["value", "unit", "method"],
+      "properties": {
+        "value": {"type": "number", "minimum": 0},
+        "unit": {"type": "string"},
+        "method": {"type": "string"}
+      }
+    },
+    "preprocessing": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "mode": {"enum": ["auto", "transcript", "markdown", "html", "plain"]},
+        "speech_units": {"type": "boolean", "default": false},
+        "corpus_ref": {"type": "string"},
+        "original_layout_ref": {"type": ["string", "null"]},
+        "notes": {"type": "string"}
+      }
+    },
+    "permissions": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["local_storage", "quotation", "redistribution"],
+      "properties": {
+        "local_storage": {"enum": ["allowed", "not_allowed", "unknown"]},
+        "quotation": {"enum": ["allowed_with_limits", "not_allowed", "unknown"]},
+        "redistribution": {"enum": ["allowed_with_limits", "not_allowed", "unknown"]},
+        "limits_and_basis": {"type": "string"}
+      }
+    },
+    "analysis_status": {"enum": ["pending", "partial", "analyzed", "insufficient_samples"]},
+    "archetype_id": {"type": ["string", "null"]},
+    "beat_sheet_ref": {"type": ["string", "null"]},
+    "form_observations": {"type": "array", "items": {"type": "string"}},
+    "content_isolation_refs": {"type": "array", "items": {"type": "string"}},
+    "sample_locations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["function", "location", "summary"],
+        "properties": {
+          "function": {"type": "string"},
+          "location": {"type": "string"},
+          "summary": {"type": "string"},
+          "minimal_excerpt": {"type": "string", "description": "Optional. Only store the necessary minimum when permitted; omit by default."},
+          "excerpt_permission_note": {"type": "string"}
+        }
+      }
+    },
+    "limitations": {"type": "array", "items": {"type": "string"}}
+  }
+}
