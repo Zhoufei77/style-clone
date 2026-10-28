@@ -69,7 +69,7 @@
 style-clone-general/
 ├── SKILL.md
 ├── references/                 提炼、写作、预处理、验证指南
-├── templates/dna/              空白通用模板，不含用户文稿
+├── templates/              空白通用模板，不含用户文稿
 ├── scripts/preprocess.py       本地预处理
 ├── scripts/distill_metrics.py  描述统计与报告
 ├── tests/                     脚本与发布字段检查
@@ -81,7 +81,7 @@ style-clone-general/
 └── VERSION
 ```
 
-上传 ZIP 中只有这个顶层技能文件夹，不包含整个多技能仓库、版本控制目录、缓存或运行产物。
+上传 ZIP 中只有这个顶层技能文件夹，内部仅保留 scripts/、references/、templates/、tests/ 等单层子目录，符合2026-10-28发布解析器的两级目录限制；不包含版本控制目录、缓存或运行产物。
 
 普通写作和分析不需要 API Key、Python、网络或其他 Skill。运行可选脚本时，需要 Python 3.9+，只用标准库。Windows 可用 `py -3`，macOS/Linux 可用 `python3`；以下统一写作 `python`。
 

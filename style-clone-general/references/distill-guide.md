@@ -49,7 +49,7 @@ python3 "<skill-dir>/scripts/distill_metrics.py" "style-profile/corpus" --out "s
 
 ## 5. 用 24 维网格提炼语言
 
-在 [语言模板](../templates/dna/01-language-dna.md) 中完成以下维度。每一项记录观察规律、适用情境、变化或反例；有统计则写基线；样本层以匿名 ID 与位置定位为主，必要时才附获准的最小摘录。
+在 [语言模板](../templates/01-language-dna.md) 中完成以下维度。每一项记录观察规律、适用情境、变化或反例；有统计则写基线；样本层以匿名 ID 与位置定位为主，必要时才附获准的最小摘录。
 
 | 组 | 维度 |
 | --- | --- |
@@ -63,7 +63,7 @@ python3 "<skill-dir>/scripts/distill_metrics.py" "style-profile/corpus" --out "s
 
 ## 6. 提炼结构、排版与观察视角
 
-逐篇按 [节拍表模板](../templates/dna/beat-sheets/_example.md) 记录功能、长度、信息类型、过渡动作和情绪变化。先有逐篇证据，再归纳反复出现的原型；原型数量由样本决定，只有一种就写一种，无法归纳就保留逐篇描述。
+逐篇按 [节拍表模板](../templates/beat-sheet-example.md) 记录功能、长度、信息类型、过渡动作和情绪变化。先有逐篇证据，再归纳反复出现的原型；原型数量由样本决定，只有一种就写一种，无法归纳就保留逐篇描述。
 
 将原型及选择条件填入 02。图文排版从原件读取后填入 03；纯文本缺少的排版信息标“无法观察”。把可迁移的提问和论证习惯填入 04，具体话题立场不升格成通用思维方式。
 
@@ -75,6 +75,6 @@ python3 "<skill-dir>/scripts/distill_metrics.py" "style-profile/corpus" --out "s
 
 ## 8. 检查与交付
 
-填写入口 [WRITING-DNA.md](../templates/dna/WRITING-DNA.md)，列出最有证据的特征、适用范围、局限和文件导航。模板中的待填项是运行时占位，不是已建立的风格规则。
+填写入口 [WRITING-DNA.md](../templates/WRITING-DNA.md)，列出最有证据的特征、适用范围、局限和文件导航。模板中的待填项是运行时占位，不是已建立的风格规则。
 
 检查三层是否闭合、24 维是否有状态、原型是否可回溯到节拍表、内容是否与形式分开、06 是否误把统计变成禁令。可用未参与提炼的获准样本复核；没有时说明未作留出检验。后续用新主题试写并按 [验证指南](verify-guide.md) 复核，仍不能把一次通过称为质量保证。

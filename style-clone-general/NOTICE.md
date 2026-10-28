@@ -9,7 +9,7 @@
 
 ## 2. ahao-writing-dna-distiller
 - 仓库：`https://github.com/ahao31196/ahao-writing-dna-distiller`
-- 用途：六层蒸馏方法、AI 味防火墙（L1.5）、`scripts/distill_metrics.py`、`templates/dna/` 产物模板。
+- 用途：六层蒸馏方法、AI 味防火墙（L1.5）、`scripts/distill_metrics.py`、`templates/` 产物模板。
 - 许可：见 `LICENSE-ahao.txt`（MIT）。
 
 ## 本 skill 的新增部分
@@ -19,7 +19,7 @@
 - `references/preprocess.md`（输入类型识别 + 清洗规范）
 - `references/verify-guide.md`（subagent 客观对比验证）
 - `scripts/preprocess.py`（转录稿/HTML/Markdown/纯文本分流清洗）
-- `templates/dna/WRITING-DNA.md`（通用整合入口模板）
+- `templates/WRITING-DNA.md`（通用整合入口模板）
 
 ## 通用版
 
